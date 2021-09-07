@@ -5,9 +5,7 @@ public:
         int n = nums.size();
         
         for(int i=0 ;i<n ;i++){
-            cs = cs + nums[i];
-            
-            
+            cs = cs + nums[i];     
             large = max(large,cs);
             if(cs<0) cs =0;
         }
