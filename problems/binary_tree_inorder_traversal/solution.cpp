@@ -12,18 +12,16 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> v ;
-            recurse(root,v); 
-        return v;
+          vector<int> v;
+        order(root,v);
+            return v;
     }
-    
-    
-    void recurse(TreeNode* root,vector<int> &v){
-        if(root == NULL) return;
-        recurse(root->left,v);
-        v.push_back(root->val);
-        recurse(root->right,v);
-        
-      
+    void order(TreeNode* root, vector<int> &v){
+        if(root==NULL) return;
+       
+        order(root->left,v);
+           v.push_back(root->val);
+        order(root->right,v);
+       
     }
 };
