@@ -1,1 +1,1 @@
-# sync_leetcode
+# Synced Leetcode Submissions
